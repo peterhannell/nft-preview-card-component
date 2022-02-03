@@ -1,0 +1,140 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary colours */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* neutral colours */
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.white {
+  color: var(--white);
+}
+.cyan {
+  color: var(--cyan);
+}
+.soft-blue {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+.title-text {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--main-bg);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 415px) {
+  .card-container {
+    max-width: 70vw;
+  }
+  .card-info {
+    flex-wrap: wrap;
+  }
+}
+
+.icon-container:hover {
+  background-color: var(--cyan);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.title-text:hover,
+#author-name:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.card-container {
+  border-radius: 3%;
+  background-color: var(--card-bg);
+  width: 21.875rem;
+  max-width: 100%;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0em 0.25em 0.75em;
+}
+
+.card-image__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 2.5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  opacity: 0;
+}
+
+#icon-view {
+  position: absolute;
+  top: 43%;
+  left: 43%;
+}
+
+#img-equilibrium {
+  border-radius: 2.5%;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info__left,
+.card-info__right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.horizontal-line {
+  border-style: solid;
+  border-bottom: none;
+  color: var(--line-color);
+}
+
+.card-footer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-footer__img {
+  width: 2rem;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
