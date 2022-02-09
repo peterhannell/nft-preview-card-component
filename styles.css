@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -53,6 +57,7 @@ a {
   background-color: var(--card--bg);
   width: 87.5%;
   max-width: 33rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
 }
 
 .img__container {
@@ -60,7 +65,7 @@ a {
   width: 100%;
   overflow: hidden;
   cursor: pointer;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.2rem;
 }
 
 .img__container img {
@@ -94,10 +99,6 @@ a {
   margin-bottom: 1.1rem;
 }
 
-.card__desc p:first-of-type {
-  margin-top: 1rem;
-}
-
 .flex {
   display: flex;
   justify-content: space-between;
@@ -105,19 +106,15 @@ a {
   margin-top: 1.1rem;
 }
 
-.flex__left,
-.flex__right {
+.flex ul {
   display: flex;
   gap: 0.6rem;
   align-items: center;
 }
 
-hr {
-  color: var(--line);
-}
-
 .card__footer {
-  margin-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1.2rem;
   display: flex;
   gap: 1.8rem;
   align-items: center;
@@ -128,6 +125,13 @@ hr {
   height: auto;
   border: 2px solid hsla(0, 0%, 100%, 0.6);
   border-radius: 50%;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* -- Typography -- */
@@ -149,21 +153,32 @@ hr {
   color: var(--blue);
 }
 
-.flex__left p {
-  font-weight: 600;
+.eth p {
   color: var(--cyan);
+  font-weight: 600;
 }
 
-.flex__right p {
-  font-weight: 400;
-}
-
-.card__footer span {
+.card__footer a {
   font-weight: 400;
   color: var(--white);
   cursor: pointer;
 }
 
-.card__footer span:hover {
+.card__footer a:hover {
   color: var(--cyan);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: var(--card--bg);
+}
+
+.attribution p,
+.attribution a {
+  color: var(--white);
+}
+
+.attribution a:hover {
+  color: cyan;
 }

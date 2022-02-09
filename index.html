@@ -25,16 +25,6 @@
 
     <title>Frontend Mentor | NFT preview card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
   </head>
   <body>
     <main class="container">
@@ -51,35 +41,39 @@
               width="48"
               height="48"
               src="./images/icon-view.svg"
-              alt="Icon View"
+              alt=""
+              aria-hidden="true"
             />
           </div>
         </div>
         <div class="card__desc">
-          <a href="#">Equilibrium #3429</a>
+          <h1><a href="#">Equilibrium #3429</a></h1>
           <p>Our Equilibrium collection promotes balance and calm.</p>
           <div class="flex">
-            <div class="flex__left">
-              <img
+            <ul class="eth">
+
+              <li><img
                 width="11"
                 height="18"
                 src="./images/icon-ethereum.svg"
-                alt="Ethereum"
-              />
-              <p>0.041 ETH</p>
-            </div>
-            <div class="flex__right">
-              <img
+                alt=""
+                aria-hidden="true"
+              /></li>
+             <li><p>0.041 ETH</p></li>
+            </ul>
+            <ul class="time">
+              <li><img
                 width="17"
                 height="17"
                 src="./images/icon-clock.svg"
-                alt="Clock"
-              />
-              <p>3 days left</p>
+                alt=""
+                aria-hidden="true"
+              /></li>
+              <li><p>3 days left</p></li>
+              </ul>
             </div>
           </div>
         </div>
-        <hr />
         <div class="card__footer">
           <img
             width="132"
@@ -87,16 +81,15 @@
             src="./images/image-avatar.png"
             alt="Avatar"
           />
-          <p>Creation of <span>Jules Wyvern</span></p>
+          <p>Creation of <a href="#" alt="Jules Wyvern">Jules Wyvern</a></p>
         </div>
       </section>
     </main>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    <footer class="attribution">
+      <p>Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" aria-label="Frontendmentor.io Homepage" target="_blank" 
         >Frontend Mentor</a
-      >. Coded by <a href="#">Peter Hannell</a>.
-    </div> -->
+      >. Coded by <a href="https://www.frontendmentor.io/profile/peterhannell" aria-label="My frontendmentor.io profile" >Peter Hannell</a></p>
+    </footer>
   </body>
 </html>
