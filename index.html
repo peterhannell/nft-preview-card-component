@@ -11,74 +11,92 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
     <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
   </head>
   <body>
-    <main>
-      <div class="card-container">
-          <div class="card-image__container">
+    <main class="container">
+      <section class="card">
+        <div class="img__container">
+          <img
+            src="./images/image-equilibrium.jpg"
+            width="604"
+            height="604"
+            alt="Equilibrium"
+          />
+          <div class="img__overlay">
             <img
-              id="img-equilibrium"
-              src="./images/image-equilibrium.jpg"
-              alt="Equilibrium"
-            />
-            <div class="icon-container">
-            <img id="icon-view" src="./images/icon-view.svg" alt="Icon">
-          </div>
-          </div>
-          <header class="card-title">
-          <h1 class="title-text white">Equilibrium #3429</h1>
-
-        </header>
-        <div class="card-paragraph">
-          <p id="paragraph-text" class="soft-blue">
-            Our Equilibrium collection promotes balance and calm.
-          </p>
-          </div>
-        </header>
-        <div class="card-info">
-          <div class="card-info__left">
-            <img src="./images/icon-ethereum.svg" alt="Ethereum">
-          
-            <p class="cyan">0.041 ETH</p>
-          </div>
-          <div class="card-info__right">
-              <img src="./images/icon-clock.svg" alt="Clock">
-            <p id="clock-text" class="soft-blue">3 days left</p>
-          </div>
-        </div>
-        <hr class="horizontal-line">
-        <div class="card-footer">
-          <div class="card-footer__img">
-            <img
-              id="card-avatar"
-              src="./images/image-avatar.png"
-              alt="Jules Wyvern"
+              width="48"
+              height="48"
+              src="./images/icon-view.svg"
+              alt="Icon View"
             />
           </div>
-          <div class="card-footer__author">
-            <p id="footer-text" class="soft-blue">
-              Creation of <span id="author-name" class="white">Jules Wyvern</span>
-            </p>
+        </div>
+        <div class="card__desc">
+          <a href="#">Equilibrium #3429</a>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+          <div class="flex">
+            <div class="flex__left">
+              <img
+                width="11"
+                height="18"
+                src="./images/icon-ethereum.svg"
+                alt="Ethereum"
+              />
+              <p>0.041 ETH</p>
+            </div>
+            <div class="flex__right">
+              <img
+                width="17"
+                height="17"
+                src="./images/icon-clock.svg"
+                alt="Clock"
+              />
+              <p>3 days left</p>
+            </div>
           </div>
         </div>
-      </div>
+        <hr />
+        <div class="card__footer">
+          <img
+            width="132"
+            height="132"
+            src="./images/image-avatar.png"
+            alt="Avatar"
+          />
+          <p>Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </section>
     </main>
 
-    <!-- <footer>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Peter Hannell</a>.
-      </div>
-    </footer> -->
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Peter Hannell</a>.
+    </div> -->
   </body>
 </html>
