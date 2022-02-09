@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  overflow-x: hidden; /* -- hide horizontal scroll in chrome -- */
   font-family: "Outfit", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
